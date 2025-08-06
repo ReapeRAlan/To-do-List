@@ -320,5 +320,7 @@ For issues and questions:
 - [ ] Dark/light theme toggle
 - [ ] Task search functionality
 - [ ] PWA (Progressive Web App) support
-#   T o - d o - L i s t  
+#   T o - d o - L i s t 
+ 
+ #   T o - d o - L i s t  
  
