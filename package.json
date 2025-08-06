@@ -1,0 +1,38 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "A modern ToDo List application with local storage and Docker deployment",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx http-server -p 8000",
+    "docker:build": "docker build -t todo-list-app .",
+    "docker:run": "docker run -d -p 80:80 --name todo-app todo-list-app",
+    "docker:stop": "docker stop todo-app && docker rm todo-app",
+    "docker:logs": "docker logs todo-app",
+    "docker:compose:up": "docker-compose up -d",
+    "docker:compose:down": "docker-compose down"
+  },
+  "keywords": [
+    "todo",
+    "task-manager",
+    "javascript",
+    "html",
+    "css",
+    "docker",
+    "aws",
+    "local-storage"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/todo-list-app.git"
+  },
+  "devDependencies": {
+    "http-server": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
